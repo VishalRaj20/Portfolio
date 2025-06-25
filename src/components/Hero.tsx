@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
-            <span className="text-lg text-gray-600 mb-4 block">Welcome to my portfolio</span>
+            <span className="text-lg text-gray-600 mb-4 block">Welcome to my digital space</span>
 
             <h1 className="text-6xl lg:text-8xl font-extrabold leading-tight text-gray-900 mb-4">
               Hi, I'm <br />
@@ -19,12 +19,11 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-2xl font-semibold text-gray-800 mb-2">Full Stack Developer</p>
+            <p className="text-2xl font-semibold text-gray-800 mb-2">Full Stack & AI-Driven Developer</p>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-6 mx-auto lg:mx-0"></div>
 
             <p className="text-lg text-gray-600 max-w-2xl leading-relaxed font-medium mx-auto lg:mx-0 mb-10">
-              I build scalable full-stack web apps using modern frameworks like Next.js, Supabase, and Clerk.
-              Focused on performance, AI integration, and seamless UX that drives real-world impact.
+              Full-stack developer skilled in Next.js, Supabase, and Clerk. Built an AI-powered car marketplace using Gemini 1.5 for automated listings. Passionate about real-time systems, seamless UX, and scalable solutions.
             </p>
 
             {/* CTA Buttons */}
@@ -54,18 +53,21 @@ const Hero = () => {
             <div className="flex gap-6 justify-center lg:justify-start">
               <a
                 href="https://github.com/VishalRaj20"
+                aria-label="GitHub Profile"
                 className="p-4 bg-white rounded-2xl shadow-md hover:shadow-purple-500/20 transition-all transform hover:scale-110 border border-gray-100"
               >
                 <Github className="w-6 h-6 text-gray-700 hover:text-purple-600 transition-colors duration-300" />
               </a>
               <a
                 href="https://www.linkedin.com/in/vishal-raj-816485253/"
+                aria-label="LinkedIn Profile"
                 className="p-4 bg-white rounded-2xl shadow-md hover:shadow-purple-500/20 transition-all transform hover:scale-110 border border-gray-100"
               >
                 <Linkedin className="w-6 h-6 text-gray-700 hover:text-purple-600 transition-colors duration-300" />
               </a>
               <a
                 href="mailto:vishalraj857808@gmail.com"
+                aria-label="Send Email"
                 className="p-4 bg-white rounded-2xl shadow-md hover:shadow-purple-500/20 transition-all transform hover:scale-110 border border-gray-100"
               >
                 <Mail className="w-6 h-6 text-gray-700 hover:text-purple-600 transition-colors duration-300" />
@@ -78,7 +80,7 @@ const Hero = () => {
             <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-xl border-8 border-white">
               <img
                 src="/portifoliopng-removebg-preview.png"
-                alt="Profile"
+                alt="Vishal Raj Profile Picture"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-purple-600/10 to-pink-500/10"></div>

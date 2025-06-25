@@ -6,6 +6,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Toaster } from 'react-hot-toast';
+import Education from './components/Education';
+import Certifications from './components/Certificate';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Education />
       <Experience />
       <Projects />
+      <Certifications />
       <Contact />
       <Footer />
     </div>

@@ -5,22 +5,22 @@ const About = () => {
     {
       name: 'Frontend Development',
       icon: Code,
-      description: 'HTML, CSS, JavaScript, React, TypeScript, Next.js, Tailwind CSS',
+      description: 'HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Tailwind CSS, Shadcn UI',
     },
     {
       name: 'Backend Development',
       icon: Zap,
-      description: 'Node.js, Express.js, Python, MongoDB, PostgreSQL, Supabase, REST APIs',
+      description: 'Node.js, Express.js, REST APIs, Supabase, MongoDB, PostgreSQL, Clerk Auth',
     },
     {
-      name: 'Problem Solving',
+      name: 'Problem Solving & DSA',
       icon: Heart,
-      description: 'Data Structures, Algorithms, Competitive Programming (C++)',
+      description: 'C++, Data Structures, Algorithms, Competitive Programming (Leetcode, Codeforces)',
     },
     {
       name: 'Database & Cloud',
       icon: Database,
-      description: 'Supabase, MySQL MongoDB Atlas',
+      description: 'MongoDB Atlas, Supabase, MySQL, Vercel, GitHub Actions',
     },
   ];
 
@@ -32,9 +32,10 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'm a passionate full-stack developer with a strong foundation in building modern web apps, solving real-world problems, and creating scalable digital experiences. I enjoy blending elegant UI with robust backend logic to deliver impactful solutions.
+            I’m a pre-final year B.Tech student in Electronics and Communication Engineering at NIT Andhra Pradesh (Graduating 2026). 
+            With a strong foundation in both hardware and software, I specialize in building full-stack applications, solving real-world problems, 
+            and blending intelligent systems with modern design.
           </p>
-
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -62,36 +63,36 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">
-                Let's Build Something Great
+                Let’s Build Something Innovative
               </h3>
               <p className="text-blue-100 text-lg">
-                I'm Vishal, a passionate full-stack developer with hands-on experience in building scalable, AI-powered web apps.
-                Whether it's turning ideas into interactive platforms or enhancing performance with clean code and smart design,
-                I'm eager to collaborate and bring your product to life.
+                I'm Vishal, a full-stack developer and ECE undergrad who enjoys creating intelligent web applications. 
+                From building scalable car marketplaces to real-time chat apps and portfolio sites, I combine modern frontend design with 
+                powerful backend systems. Passionate about learning, I’ve also explored AI and NLP during my internship at IIT Bhubaneswar.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold mb-2">5+</div>
-                <div className="text-blue-100">Full-Stack Projects</div>
+                <div className="text-3xl font-bold mb-2">10+</div>
+                <div className="text-blue-100">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold mb-2">5</div>
+                <div className="text-3xl font-bold mb-2">6+</div>
                 <div className="text-blue-100">Tech Stacks Mastered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold mb-2">100%</div>
-                <div className="text-blue-100">Client Satisfaction</div>
+                <div className="text-3xl font-bold mb-2">30%</div>
+                <div className="text-blue-100">AI Boost in Travel Itineraries</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2">Open</div>
-                <div className="text-blue-100">for Freelance & Internships</div>
+                <div className="text-blue-100">to Internships & Freelance</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 

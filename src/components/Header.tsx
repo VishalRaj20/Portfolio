@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Briefcase, Mail, Code } from 'lucide-react';
+import { Menu, X, Home, User, Briefcase, Mail, Code, GraduationCap, Award  } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,10 +16,13 @@ const Header = () => {
   const navItems = [
     { name: 'Home', href: '#home', icon: Home },
     { name: 'About', href: '#about', icon: User },
+    { name: 'Education', href: '#education', icon: GraduationCap },
     { name: 'Experience', href: '#experience', icon: Briefcase },
     { name: 'Projects', href: '#projects', icon: Code },
+    { name: 'Certifications', href: '#certifications', icon: Award },
     { name: 'Contact', href: '#contact', icon: Mail },
   ];
+
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
