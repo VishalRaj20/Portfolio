@@ -11,8 +11,8 @@ Welcome to my personal portfolio website – a modern, responsive, and full-stac
 ---
 
 <p align="center">
-  <img src="https://github.com/VishalRaj20/Portfolio/blob/3167220e49b9aa446f6d72d699d73e3d4578fb01/public/Portfolio1.png" alt="Car Marketplace Banner" width="100%" />
-  <img src="https://github.com/VishalRaj20/Portfolio/blob/3167220e49b9aa446f6d72d699d73e3d4578fb01/public/Portfolio2.png" alt="Car Marketplace Banner" width="100%" />
+  <img src="https://github.com/VishalRaj20/Portfolio/blob/3e8b421a989e3a5f0e0e03e37536edd02e6bfe8e/public/Portfolio1%20(1).png" alt="Car Marketplace Banner" width="100%" />
+  <img src="https://github.com/VishalRaj20/Portfolio/blob/3e8b421a989e3a5f0e0e03e37536edd02e6bfe8e/public/Portfolio1%20(2).png" alt="Car Marketplace Banner" width="100%" />
 </p>
 
 ---
