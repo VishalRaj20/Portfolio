@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
-            <span className="text-lg text-gray-600 mb-4 block">Welcome to my digital space</span>
+            <span className="text-xl text-gray-700 mb-4 block">Welcome to my digital space</span>
 
             <h1 className="text-6xl lg:text-8xl font-extrabold leading-tight text-gray-900 mb-4">
               Hi, I'm <br />
@@ -19,11 +19,11 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-2xl font-semibold text-gray-800 mb-2">Full Stack & AI-Driven Developer</p>
+            <p className="text-2xl font-semibold text-gray-800 mb-2">Full Stack Developer | Aspiring software developer</p>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-6 mx-auto lg:mx-0"></div>
 
             <p className="text-lg text-gray-600 max-w-2xl leading-relaxed font-medium mx-auto lg:mx-0 mb-10">
-              Full-stack developer skilled in Next.js, Supabase, and Clerk. Built an AI-powered car marketplace using Gemini 1.5 for automated listings. Passionate about real-time systems, seamless UX, and scalable solutions.
+              Passionate about software development, artificial intelligence, and web technologies. Currently pursuing Electronics and Communication Engineering at NIT Andhra Pradesh.
             </p>
 
             {/* CTA Buttons */}

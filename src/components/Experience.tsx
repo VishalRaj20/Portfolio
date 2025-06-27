@@ -4,7 +4,7 @@ const experiences = [
   {
     title: 'Summer Intern - Full Stack Developer',
     company: 'Bihar State Power (Holding) Company Limited',
-    location: 'On Site (Under IT Manager SCADA, SBPDCL)',
+    location: 'On Site',
     period: 'May 2025 – Jun 2025',
     description:
       'Developed a comprehensive car marketplace platform as part of the official in-plant training, under the supervision of the IT Manager SCADA at SBPDCL. The project focused on end-to-end web application development using modern full-stack tools.',
@@ -37,14 +37,10 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 px-6 lg:px-12">
+    <section id="experience" className="pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 px-6 lg:px-12">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Experience</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            My professional journey through various roles and companies,
-            building expertise in full-stack development, AI, and scalable systems.
-          </p>
         </div>
 
         <div className="max-w-6xl mx-auto">

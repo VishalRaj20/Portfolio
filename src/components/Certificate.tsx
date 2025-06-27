@@ -80,20 +80,16 @@ const Certifications = () => {
     };
 
     return (
-        <section id="certifications" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 px-6 lg:px-12">
+        <section id="certifications" className="pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 px-6 lg:px-12">
             <div className="container mx-auto max-w-7xl">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                         Certifications & Achievements
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Professional certifications, competitive programming achievements, and hackathon victories
-                        that demonstrate my technical expertise and problem-solving abilities.
-                    </p>
                 </div>
 
                 {/* Certifications */}
-                <div className="mb-16">
+                <div className="mb-10">
                     <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Professional Certifications</h3>
                     <div className="grid lg:grid-cols-3 gap-8">
                         {certifications.map((cert, index) => {
@@ -176,7 +172,7 @@ const Certifications = () => {
                 </div>
 
                 {/* Achievements */}
-                <div className="mb-16">
+                <div className="mb-2">
                     <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Major Achievements</h3>
                     <div className="grid lg:grid-cols-3 gap-8">
                         {achievements.map((achievement, index) => {

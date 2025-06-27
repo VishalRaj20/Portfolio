@@ -7,8 +7,6 @@ const Education = () => {
       institution: 'National Institute of Technology, Andhra Pradesh',
       location: 'Andhra Pradesh, India',
       period: '2022 - 2026',
-      description:
-        'Pursuing B.Tech in Electronics & Communication Engineering with a strong foundation in digital systems, embedded technologies, and signal processing. Actively engaged in building full-stack applications and participating in technical events.',
       achievements: ['CGPA: 8.54/10'],
     },
     {
@@ -16,20 +14,15 @@ const Education = () => {
       institution: 'A.N. College, Patna',
       location: 'Patna, Bihar',
       period: '2020 - 2022',
-      description:
-        'Completed intermediate education under the Bihar School Examination Board with a focus on Mathematics, Physics, and Chemistry. Built a strong analytical and logical reasoning foundation.',
       achievements: ['Percentage: 85.6%'],
     },
   ];
 
   return (
-    <section id="education" className="py-20 bg-white px-6 lg:px-12">
+    <section id="education" className="pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 px-6 lg:px-12">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Education</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            My academic journey in Electronics & Communication Engineering has shaped my technical thinking and problem-solving mindset.
-          </p>
         </div>
 
         <div className="max-w-6xl mx-auto">
@@ -76,14 +69,8 @@ const Education = () => {
                           </div>
                         </div>
 
-                        {/* Description */}
-                        <p className="text-gray-600 mb-6 leading-relaxed">
-                          {edu.description}
-                        </p>
-
                         {/* Achievements */}
                         <div className="mb-6">
-                          <h4 className="font-semibold text-gray-900 mb-3">Key Achievements:</h4>
                           <ul className="space-y-2">
                             {edu.achievements.map((achievement, i) => (
                               <li key={i} className="flex items-start">

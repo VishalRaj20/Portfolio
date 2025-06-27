@@ -74,15 +74,12 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section id="contact" className="py-3 pt-20 pb-20 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Let’s Connect and Build Something Great
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Whether you’re looking to launch a new product, improve your existing platform, or simply explore ideas — I’m always open to meaningful conversations. Let’s turn your vision into reality with impactful digital solutions.
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -91,9 +88,9 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Let’s Start a Conversation
             </h3>
-            <p className="text-gray-600 mb-8 leading-relaxed">
+            {/* <p className="text-gray-600 mb-8 leading-relaxed">
               Interested in working together? I'm always open to new ideas, exciting collaborations, or ambitious projects. Let’s build something great.
-            </p>
+            </p> */}
 
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
