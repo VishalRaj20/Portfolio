@@ -3,21 +3,21 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 const experiences = [
   {
     title: 'Summer Intern - Full Stack Developer',
-    company: 'Bihar State Power (Holding) Company Limited',
-    location: 'On Site',
+    company: 'South Bihar Power Distribution Company Limited (SBPDCL)',
+    location: 'Patna, Bihar (On Site)',
     period: 'May 2025 – Jun 2025',
     description:
-      'Developed a comprehensive car marketplace platform as part of the official in-plant training, under the supervision of the IT Manager SCADA at SBPDCL. The project focused on end-to-end web application development using modern full-stack tools.',
+      'Completed in-plant training at SBPDCL’s IT Cell, contributing to a full-stack car marketplace project under IT Manager (SCADA) supervision.',
     achievements: [
-      'Built a full-stack Car Marketplace Platform with 15+ features using Next.js, Supabase, Clerk, and ShadCn UI',
-      'Integrated Gemini 1.5 Flash API for AI-powered car detail extraction from images or descriptions',
-      'Implemented test drive booking and cancellation workflows with real-time status updates',
-      'Created dynamic dashboards for dealerships to manage working hours and track bookings',
-      'Designed responsive UI with reusable components and deployed on Vercel for seamless cross-device access',
+      'Developed a full-stack Car Marketplace Platform with Next.js, Supabase, Clerk, and ShadCn UI',
+      'Integrated Gemini API for AI-based car detail extraction from images and descriptions',
+      'Implemented test drive booking workflows and dynamic dashboards for dealership operations',
+      'Deployed a responsive, cross-device application on Vercel with real-time updates and secure access',
     ],
     technologies: ['Next.js', 'React', 'Supabase', 'Clerk', 'ShadCn UI', 'Vercel', 'Gemini API'],
-    certificateUrl: 'https://drive.google.com/file/d/1V7OS2EpW66JXlT4eCDb4bdhCU6hx1vMu/view?usp=sharing',
+    certificateUrl: 'https://drive.google.com/file/d/1p3-gVB966-sY35KmfmJ5eWm7vdHSprv0/view?usp=drive_link',
   },
+
   {
     title: 'Winter Research Intern',
     company: 'Indian Institute of Technology, Bhubaneswar',
@@ -62,7 +62,7 @@ const Experience = () => {
                             {exp.title}
                           </h3>
                           <div className="flex items-center text-blue-600 font-semibold mb-3">
-                            <ExternalLink className="w-4 h-4 mr-2" />
+                            
                             {exp.company}
                           </div>
                           <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-gray-500 text-sm">

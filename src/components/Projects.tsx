@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: 'Car Marketplace Platform',
       description: 'A full-stack car marketplace built with AI-powered car detail extraction using Gemini 1.5 Flash API. Users can auto-populate listings from images or descriptions, book or cancel test drives, and view live booking updates via a real-time dashboard.',
-      image: 'car5.png',
+      image: 'CarMaketPlace.png',
       technologies: ['Next.js', 'React', 'Supabase', 'Clerk', 'ShadCn UI', 'Vercel'],
       liveUrl: 'https://car-market-place-eight.vercel.app/',
       githubUrl: 'https://github.com/VishalRaj20/CarApp.git',
