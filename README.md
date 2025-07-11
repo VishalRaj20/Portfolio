@@ -11,8 +11,8 @@ Welcome to my personal portfolio website – a modern, responsive, and full-stac
 ---
 
 <p align="center">
-  <img src="https://github.com/VishalRaj20/Portfolio/blob/3e8b421a989e3a5f0e0e03e37536edd02e6bfe8e/public/Portfolio1%20.png" alt="Portfolio" width="100%" />
-  <img src="https://github.com/VishalRaj20/Portfolio/blob/3e8b421a989e3a5f0e0e03e37536edd02e6bfe8e/public/Portfolio2%20.png" alt="Portfolio" width="100%" />
+  <img src="https://github.com/VishalRaj20/Portfolio/blob/2c6ebe9c4e3cc01d369e8d2a43e01bf4c3fda87e/public/Portfolio1.png" alt="Portfolio" width="100%" />
+  <img src="https://github.com/VishalRaj20/Portfolio/blob/3e8b421a989e3a5f0e0e03e37536edd02e6bfe8e/public/Portfolio2.png" alt="Portfolio" width="100%" />
 </p>
 
 ---
