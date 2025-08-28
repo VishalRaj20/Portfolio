@@ -1,6 +1,6 @@
 import { ExternalLink, Github, Eye } from 'lucide-react';
 
-const Projects = () => {
+  const Projects = () => {
   const projects = [
     {
       title: 'Car Marketplace Platform',
@@ -16,7 +16,7 @@ const Projects = () => {
       description: 'A real-time chat app supporting 1:1 and group messaging with text, image, and file sharing. Built with Socket.IO and secured with JWT auth, featuring <150ms latency and real-time online status updates.',
       image: 'ChatApp UI.png',
       technologies: ['React', 'Socket.IO', 'Express.js', 'Node.js', 'MongoDB'],
-      liveUrl: 'chatapp-yt-wmo5.onrender.com/',
+      liveUrl: 'https://chatapp-yt-wmo5.onrender.com/',
       githubUrl: 'https://github.com/VishalRaj20/ChatApp-yt.git',
       featured: true
     },
@@ -30,6 +30,15 @@ const Projects = () => {
       featured: true
     },
     {
+      title: 'Fake News Detector – Inspira Hackathon',
+      description: 'Top 5 Finalist project at Inspira 24-Hour Hackathon 2025. Built an AI-powered Fake News Detector using MobileBERT integrated with a browser plugin. I managed both frontend and backend development, and successfully integrated the trained ML model into the project.',
+      image: 'Fake_new_detector.png',
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'MobileBERT', 'Browser Extension'],
+      liveUrl: 'https://hackathon-frontend1-qhwz.onrender.com/',
+      githubUrl: 'https://github.com/VishalRaj20/Inspira-Hackathon',
+      featured: true
+    },
+    {
       title: 'Amazon Clone',
       description: 'A fully functional e-commerce platform inspired by Amazon with 50+ product listings, optimized search/filtering, and a responsive user interface.',
       image: 'amazonClone.png',
@@ -37,8 +46,9 @@ const Projects = () => {
       liveUrl: '#',
       githubUrl: 'https://github.com/VishalRaj20/Amazon-clone',
       featured: true
-    }
+    },
   ];
+
 
   return (
     <section id="projects" className="pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50">
