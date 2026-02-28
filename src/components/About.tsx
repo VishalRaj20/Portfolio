@@ -32,9 +32,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I’m a pre-final year B.Tech student in Electronics and Communication Engineering at NIT Andhra Pradesh graduating 2026. 
-            With a strong foundation in both hardware and software, I specialize in building full-stack applications, solving real-world problems 
-            and blending intelligent systems with modern design.
+            I’m a final-year B.Tech student in Electronics and Communication Engineering at NIT Andhra Pradesh (Class of 2026), specializing as a backend-leaning Software Development Engineer. I build scalable full-stack applications using Node.js, REST APIs, PostgreSQL, and MongoDB, with hands-on experience in real-time systems, authentication workflows, and production-grade deployments. Passionate about solving complex problems, I’ve solved 500+ DSA problems and worked on AI-integrated systems, blending intelligent automation with clean, user-focused design.
           </p>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">I'm always eager to learn new technologies, work on challenging projects and collaborate with like-minded individuals who share my passion for innovation.</p>
         </div>
