@@ -3,16 +3,16 @@ import { Calendar, Award, ExternalLink, Star, Trophy, Code, Database } from 'luc
 const Certifications = () => {
     const certifications = [
         {
-            title: 'NVIDIA Deep Learning Institute Program',
-            issuer: 'NVIDIA Deep Learning Institute',
-            date: 'March 2025',
+            title: 'Republic Day Consistency Challenge – Rank 4',
+            issuer: 'NxtWave LaunchPad',
+            date: 'January 2025',
             description:
-                'Successfully completed the course "Fundamentals of Deep Learning for Computer Vision," focusing on image classification and convolutional neural networks.',
-            skills: ['Deep Learning', 'Computer Vision', 'CNN', 'Image Classification', 'Neural Networks'],
-            credentialId: '1tO0Ys3ITkGJkXM3sgBKrQ',
-            verifyUrl: 'https://learn.nvidia.com/certificates?id=sb6RMYRXTlOKyDYBlcGxfw#',
+                'Recognized as Rank 4 in the Republic Day Challenge: 7 Days of Consistency for demonstrating consistent participation and discipline throughout the program.',
+            skills: ['Consistency', 'Problem Solving', 'Discipline', 'Time Management'],
+            credentialId: '',
+            verifyUrl: 'https://drive.google.com/file/d/1w9GaNZGOhiOnsCcXeuIhcxuglZ4PY0F-/view',
             featured: true,
-            type: 'AI/ML'
+            type: 'Achievement'
         },
         {
             title: 'Database Management Systems (DBMS)',
@@ -22,7 +22,7 @@ const Certifications = () => {
                 'Completed comprehensive online course on Database Management Systems covering database design, SQL, normalization, and advanced database concepts.',
             skills: ['Database Design', 'SQL', 'Normalization', 'RDBMS', 'Query Optimization'],
             credentialId: 'NPTEL-DBMS-2024',
-            verifyUrl: 'https://drive.google.com/file/d/1X2VVoyRoXEEYap_L6GICpeWV5haXW7lM/view?usp=drive_link',
+            verifyUrl: 'https://drive.google.com/file/d/1X2VVoyRoXEEYap_L6GICpeWV5haXW7lM/view',
             featured: true,
             type: 'Database'
         },
@@ -31,40 +31,38 @@ const Certifications = () => {
             issuer: 'Ministry of Education’s Innovation Cell',
             date: 'November 2024',
             description:
-                'Built a scalable web-based application to solve real-world challenges. Selected among the top teams from 2,500+ nationwide. Led a 6-member team to prototype completion with 95% delivery.',
+                'Built a scalable web-based application to solve real-world challenges. Selected among the top teams nationwide and led a 6-member team to prototype completion.',
             skills: ['Team Leadership', 'Web Development', 'Prototyping', 'Problem Solving'],
             credentialId: 'SIH2024-TEAM-LEAD',
-            verifyUrl: 'https://drive.google.com/file/d/13Zm6yL-rTKsb4WB4EFkdmZjH5p4tBE-5/view?usp=drive_link',
+            verifyUrl: 'https://drive.google.com/file/d/13Zm6yL-rTKsb4WB4EFkdmZjH5p4tBE-5/view',
             featured: true,
             type: 'Competition'
         }
     ];
 
-
     const achievements = [
         {
             title: 'Competitive Programming',
             description:
-                'Solved 300+ Data Structures and Algorithms (DSA) problems across 10+ topics on LeetCode and CodeStudio, including Graph Theory, Dynamic Programming, and Greedy Algorithms.',
+                'Solved 500+ Data Structures and Algorithms (DSA) problems across multiple topics including Graph Theory, Dynamic Programming, and Greedy Algorithms.',
             type: 'Programming',
             icon: Code,
             highlights: [
-                '300+ DSA problems solved',
-                '10+ algorithmic topics covered',
-                'Graph Theory expertise',
-                'Dynamic Programming proficiency',
-                'Greedy Algorithms mastery'
+                '500+ DSA problems solved',
+                'Strong problem-solving foundation',
+                'Graph Theory & DP expertise',
+                'Greedy Algorithms proficiency'
             ]
         }
     ];
 
-
     const getTypeColor = (type: string) => {
         const colors = {
             'AI/ML': 'from-purple-600 to-pink-600',
-            'Database': 'from-orange-600 to-red-600',
+            'Database': 'from-orange-500 to-red-500',
             'Competition': 'from-yellow-500 to-orange-500',
-            'Programming': 'from-indigo-600 to-purple-600'
+            'Programming': 'from-indigo-600 to-purple-600',
+            'Achievement': 'from-blue-600 to-indigo-600'
         };
         return colors[type as keyof typeof colors] || 'from-gray-600 to-gray-700';
     };
@@ -75,35 +73,42 @@ const Certifications = () => {
             case 'Database': return Database;
             case 'Competition': return Trophy;
             case 'Programming': return Code;
+            case 'Achievement': return Award;
             default: return Award;
         }
     };
 
     return (
-        <section id="certifications" className="pt-20 pb-10 bg-gradient-to-br from-gray-50 to-blue-50 px-6 lg:px-12">
+        <section id="certifications" className="pt-20 pb-16 bg-gradient-to-br from-gray-50 to-blue-50 px-6 lg:px-12">
             <div className="container mx-auto max-w-7xl">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+
+                <div className="text-center mb-14">
+                    <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
                         Certifications & Achievements
                     </h2>
                 </div>
 
                 {/* Certifications */}
-                <div className="mb-10">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Professional Certifications</h3>
+                <div className="mb-16">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+                        Professional Certifications
+                    </h3>
+
                     <div className="grid lg:grid-cols-3 gap-8">
                         {certifications.map((cert, index) => {
                             const IconComponent = getTypeIcon(cert.type);
+
                             return (
                                 <div
                                     key={index}
-                                    className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                                    className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
                                 >
                                     <div className="p-8">
+
                                         {/* Header */}
                                         <div className="mb-6">
                                             <div className="flex items-center justify-between mb-4">
-                                                <div className={`w-12 h-12 bg-gradient-to-r ${getTypeColor(cert.type)} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                                                <div className={`w-12 h-12 bg-gradient-to-r ${getTypeColor(cert.type)} rounded-xl flex items-center justify-center`}>
                                                     <IconComponent className="w-6 h-6 text-white" />
                                                 </div>
                                                 <span className={`text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r ${getTypeColor(cert.type)} text-white`}>
@@ -111,11 +116,11 @@ const Certifications = () => {
                                                 </span>
                                             </div>
 
-                                            <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200 leading-tight">
+                                            <h3 className="text-lg font-bold text-gray-900 mb-2 leading-snug">
                                                 {cert.title}
                                             </h3>
 
-                                            <div className="text-blue-600 font-semibold mb-2">
+                                            <div className="text-blue-600 font-semibold text-sm mb-1">
                                                 {cert.issuer}
                                             </div>
 
@@ -126,18 +131,20 @@ const Certifications = () => {
                                         </div>
 
                                         {/* Description */}
-                                        <p className="text-gray-600 mb-6 leading-relaxed">
+                                        <p className="text-gray-600 text-sm mb-6 leading-relaxed">
                                             {cert.description}
                                         </p>
 
                                         {/* Skills */}
                                         <div className="mb-6">
-                                            <h4 className="font-semibold text-gray-900 mb-3">Skills Covered:</h4>
+                                            <h4 className="font-semibold text-gray-900 mb-3 text-sm">
+                                                Skills Covered:
+                                            </h4>
                                             <div className="flex flex-wrap gap-2">
                                                 {cert.skills.map((skill, i) => (
                                                     <span
                                                         key={i}
-                                                        className={`px-3 py-1 bg-gradient-to-r ${getTypeColor(cert.type)} bg-opacity-10 text-gray-700 rounded-full text-sm font-medium`}
+                                                        className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-medium"
                                                     >
                                                         {skill}
                                                     </span>
@@ -145,26 +152,30 @@ const Certifications = () => {
                                             </div>
                                         </div>
 
-                                        {/* Credential Info */}
-                                        <div className="border-t pt-4">
-                                            <div className="flex items-center justify-between">
+                                        {/* Footer */}
+                                        <div className="border-t pt-4 flex items-center justify-between">
+                                            {cert.credentialId && (
                                                 <div>
                                                     <p className="text-xs text-gray-500">Credential ID</p>
-                                                    <p className="text-sm font-mono text-gray-700">{cert.credentialId}</p>
+                                                    <p className="text-xs font-mono text-gray-700">
+                                                        {cert.credentialId}
+                                                    </p>
                                                 </div>
-                                                <a
-                                                    href={cert.verifyUrl}
-                                                    className="flex items-center gap-1 text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors duration-200"
-                                                >
-                                                    <ExternalLink className="w-4 h-4" />
-                                                    Verify
-                                                </a>
-                                            </div>
+                                            )}
+
+                                            <a
+                                                href={cert.verifyUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-1 text-blue-600 hover:text-blue-800 text-sm font-medium"
+                                            >
+                                                <ExternalLink className="w-4 h-4" />
+                                                Verify
+                                            </a>
                                         </div>
                                     </div>
 
-                                    {/* Hover Effect Border */}
-                                    <div className={`h-1 bg-gradient-to-r ${getTypeColor(cert.type)} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
+                                    <div className={`h-1 bg-gradient-to-r ${getTypeColor(cert.type)}`}></div>
                                 </div>
                             );
                         })}
@@ -172,59 +183,56 @@ const Certifications = () => {
                 </div>
 
                 {/* Achievements */}
-                <div className="mb-2">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Major Achievements</h3>
+                <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+                        Major Achievements
+                    </h3>
+
                     <div className="grid lg:grid-cols-3 gap-8">
                         {achievements.map((achievement, index) => {
                             const IconComponent = achievement.icon;
+
                             return (
                                 <div
                                     key={index}
-                                    className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+                                    className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
                                 >
                                     <div className="p-8">
-                                        {/* Header */}
-                                        <div className="mb-6">
-                                            <div className="flex items-center justify-between mb-4">
-                                                <div className={`w-12 h-12 bg-gradient-to-r ${getTypeColor(achievement.type)} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                                                    <IconComponent className="w-6 h-6 text-white" />
-                                                </div>
-                                                <span className={`text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r ${getTypeColor(achievement.type)} text-white`}>
-                                                    {achievement.type}
-                                                </span>
-                                            </div>
 
-                                            <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
-                                                {achievement.title}
-                                            </h3>
+                                        <div className="flex items-center justify-between mb-4">
+                                            <div className={`w-12 h-12 bg-gradient-to-r ${getTypeColor(achievement.type)} rounded-xl flex items-center justify-center`}>
+                                                <IconComponent className="w-6 h-6 text-white" />
+                                            </div>
+                                            <span className={`text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r ${getTypeColor(achievement.type)} text-white`}>
+                                                {achievement.type}
+                                            </span>
                                         </div>
 
-                                        {/* Description */}
-                                        <p className="text-gray-600 mb-6 leading-relaxed">
+                                        <h3 className="text-lg font-bold text-gray-900 mb-3">
+                                            {achievement.title}
+                                        </h3>
+
+                                        <p className="text-gray-600 text-sm mb-6">
                                             {achievement.description}
                                         </p>
 
-                                        {/* Highlights */}
-                                        <div>
-                                            <h4 className="font-semibold text-gray-900 mb-3">Key Highlights:</h4>
-                                            <ul className="space-y-2">
-                                                {achievement.highlights.map((highlight, i) => (
-                                                    <li key={i} className="flex items-start">
-                                                        <div className={`w-2 h-2 bg-gradient-to-r ${getTypeColor(achievement.type)} rounded-full mt-2 mr-3 flex-shrink-0`}></div>
-                                                        <span className="text-gray-600 text-sm">{highlight}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                        <ul className="space-y-2">
+                                            {achievement.highlights.map((highlight, i) => (
+                                                <li key={i} className="flex items-start text-sm text-gray-700">
+                                                    <div className={`w-2 h-2 bg-gradient-to-r ${getTypeColor(achievement.type)} rounded-full mt-2 mr-3`}></div>
+                                                    {highlight}
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
 
-                                    {/* Hover Effect Border */}
-                                    <div className={`h-1 bg-gradient-to-r ${getTypeColor(achievement.type)} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
+                                    <div className={`h-1 bg-gradient-to-r ${getTypeColor(achievement.type)}`}></div>
                                 </div>
                             );
                         })}
                     </div>
                 </div>
+
             </div>
         </section>
     );
